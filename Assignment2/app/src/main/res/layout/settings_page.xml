@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sea_background"
+    android:orientation="vertical"
+    tools:context="com.example.dolphin_memory.setting_activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/difficulty_text"
+        android:textSize="40sp" />
+
+    <RadioGroup
+        android:id="@+id/difficultyLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/easyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/easy_text"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/normalButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/normal_text"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/hardButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/hard_text"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/music_text"
+        android:textSize="40sp" />
+
+    <RadioGroup
+        android:id="@+id/musicButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/musicOn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/on_text"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/musicOff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/off_text"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+</LinearLayout>

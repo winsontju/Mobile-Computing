@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DolphineMemory</string>
+    <string name="difficulty_text">Difficulty</string>
+    <string name="easy_text">Easy</string>
+    <string name="normal_text">Normal</string>
+    <string name="hard_text">Hard</string>
+    <string name="music_text">Music</string>
+    <string name="on_text">On</string>
+    <string name="off_text">Off</string>
+    <string name="leaderboards_button">leaderboards</string>
+    <string name="setting_button">Setting</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sea_background">
+
+    <LinearLayout
+        android:id="@+id/game_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margine_top" >
+
+            <ImageView
+                android:id="@+id/timer"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/clock_margin_right"
+                android:src="@drawable/time_bar" />
+
+            <EditText
+                android:id="@+id/time_game"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="37dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:shadowColor="#2eaed9"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="00:60"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/clock_text_size" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <GridLayout
+            android:id="@+id/game_layout"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:columnCount="6"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:rowCount="6"
+            android:scrollbarSize="100dp"></GridLayout>
+
+
+        <EditText
+            android:id="@+id/points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="Score:"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>
